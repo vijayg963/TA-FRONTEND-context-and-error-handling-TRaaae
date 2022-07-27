@@ -1,11 +1,9 @@
-import Card from "./Card";
+import Card from './Card';
 
-function Cards({ isDarkMode }) {
+function Cards() {
   return (
-    <div className="cards_wrap">
-      <Card isDarkMode={isDarkMode} />
-      <Card isDarkMode={isDarkMode} />
-      <Card isDarkMode={isDarkMode} />
+    <div className='cards_wrap'>
+      <Card /> <Card /> <Card />
     </div>
   );
 }

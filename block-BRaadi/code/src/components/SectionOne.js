@@ -1,29 +1,29 @@
-import React from "react";
+import React from 'react';
 
 class SectionOne extends React.Component {
   state = {
-    value: "Hello World!",
+    value: 'Hello World!',
   };
   render() {
     return (
-      <div className="box s1-a">
+      <div className='box s1-a'>
         <h2>Regular JS Error</h2>
         <p>
-          The value of state is{" "}
-          <span className="label">{this.state.value}</span> The transformed
-          value is{" "}
-          <span className="label">
-            {this.state.value.toLowerCase().split("").join(" ")}
+          The value of state is{' '}
+          <span className='label'>{this.state.value}</span> The transformed
+          value is{' '}
+          <span className='label'>
+            {this.state.value.toLowerCase().split('').join(' ')}
           </span>
         </p>
-        <button onClick={() => this.setState({ value: "Sam" })}>
+        <button onClick={() => this.setState({ value: 'Sam' })}>
           Change input to Sam
         </button>
         <button onClick={() => this.setState({ value: {} })}>
           Change input to an object
         </button>
 
-        <p className="small">
+        <p className='small'>
           When you change the value to be an object the app will break, because
           the object doesn't contain a method named toLowerCase(). Any
           JavaScript error inside a component can make the compoennt disappear
@@ -32,7 +32,7 @@ class SectionOne extends React.Component {
           (create-react-app).
         </p>
 
-        <p className="small">
+        <p className='small'>
           Error boundary will fix this problem. Make it in such a way that when
           clicked on the second button it will display a message saying
           "Something went wrong! Reload the page"

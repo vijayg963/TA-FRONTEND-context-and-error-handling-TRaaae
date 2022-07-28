@@ -1,8 +1,11 @@
-import React from "react";
-import Header from "./Header";
-import Main from "./Main";
+import React from 'react';
+import Header from './Header';
+import Main from './Main';
 
 class App extends React.Component {
+  state = {
+    isDarkMode: '',
+  };
   render() {
     let { isDarkMode } = this.state;
     return (
